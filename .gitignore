@@ -90,7 +90,7 @@ public class Drop extends ApplicationAdapter {
         }
 
         // input for keyboard
-        if (Gdx.input.isKeyJustPressed(Input.Keys.LEFT))
+        if (Gdx.input.isKeyJustPressed(Input.Keys.LEFT)) // I use "Just" Pressed, which moves the bucket only once. If I use "isKeyPressed", this will continue moving the bucket so long as the user holds down the arrow key.
             bucket.x -= 200 * Gdx.graphics.getDeltaTime();
         if (Gdx.input.isKeyJustPressed(Input.Keys.RIGHT))
             bucket.x += 200 * Gdx.graphics.getDeltaTime();
